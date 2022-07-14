@@ -1,0 +1,263 @@
+
+
+.box{
+    margin-left: 386px;
+    margin-top: 0;
+    width: 1150px;
+    height: 615px;
+}
+
+.filters{
+    margin-top: 61px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.filter{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.filtericon{
+    float: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #1E324A;
+    margin-right: 26px;
+}
+
+
+.boxfilter {
+    margin: 0 auto;
+    width: 842px;
+    height: 55px;
+    display: flex;
+    float: left;
+}
+  
+  .dailyfilter {
+    height: 43px;
+    width: 196px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+  }
+  
+  
+  .daily {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.39);
+
+    position: absolute;
+    width: 51px;
+    height: 30px;
+    left: 13px;
+    top: 3px;
+  }
+  
+  .dropdown-arrow {
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+    /* position: relative; */
+    position: absolute;
+    left: 80.81%;
+    right: 54.74%;
+    top: 27.75%;
+    bottom: 75.41%;
+  }
+  
+  .dailyfilter:hover .dropdown-arrow {
+    top: 25px;
+      /* border-left: 10px solid transparent; */
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid rgb(72 158 145);
+    border-top: 10px solid transparent;
+  }
+  
+  .dropdown-menu {
+    list-style-type: none;
+    display: none;
+    background: #555; 
+    background: rgb(87 150 151 / 90%);
+  }
+  
+  .dailyfilter:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+  }
+  
+  .dropdown-menu ul li {
+    list-style-type: none;
+    display: block;
+    height: 43px;
+    width: 196px;
+    font-size: 1.5em;
+    line-height: 2.5em;
+    color: #fff;
+    border-bottom: 2px solid rgb(54 165 204);
+    padding-bottom: 10px;
+  }
+  
+  .dropdown-menu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu ul li:hover {
+    background: #55afb1;
+    color: #fff;
+  }
+
+  ul{
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .custom{
+    margin-left: 43px;
+  }
+
+  .custom input[type=date]{
+    width: 253px;
+    height: 43px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom input[type=date]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom input[type=date]::selection{
+    border: none;
+  }
+
+  .to{
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
+  .custom1 input[type=date]{
+    width: 253px;
+    height: 43px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom1 input[type=date]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom1 input[type=date]::selection{
+    border: none;
+  }
+
+  .dashboardDetails{
+    display: block;
+    margin-top: 77px;
+  }
+
+  .da-col{
+    margin-left: 79px;
+    margin-right: 118px;
+    margin-bottom: 61px; 
+    width: 50px;
+    height: 196px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+
+  .da-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    color: #1E324A;
+    margin-top: 5px;
+  }
+
+  .da-text1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    color: #1E324A;
+    margin-top: 5px;
+    margin-left: 15px;
+    float: left;
+  }
+
+  .eye button{
+    background: linear-gradient(0deg, #2BEB0C, #2BEB0C);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 107px;
+    height: 44px;
+    border: none;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+
+  .da-review-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #1E324A;
+    float: left;
+  }
+
+  .da-review{
+    float: left;
+    margin-left: 4px;
+    color:#333;
+    font-family: monospace
+  }
+
+  .da-reviews{
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+  .da-more button{
+    background: linear-gradient(0deg, #2BEB0C, #2BEB0C);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 107px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+  }

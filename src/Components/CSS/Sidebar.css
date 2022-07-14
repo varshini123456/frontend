@@ -1,0 +1,89 @@
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+    height: 100%;
+    width: 384px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 16px;
+    border: 1px solid #0984F6;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 100px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    float: left;
+  }
+  
+  .sidebar a:hover {
+    color: #0984F6;
+  }
+
+  .sidebar header {
+    font-size: 30px;
+    color: #01B0F1;
+    font-family: 'Gabriela', serif;
+  }
+
+  .title{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40.3px;
+    padding-bottom: 5px;
+    border-bottom: 2px outset #0984F6;
+    
+  }
+  
+  .pms{
+    vertical-align: middle;
+    width: 50px;
+    height: 80px;
+  }
+
+  .links{
+    vertical-align: middle;
+    margin-right:24px;
+  }
+  
+
+  .logout{
+    margin: 0 auto;
+  }
+
+  .logout a{
+    margin-top: 20px;
+    padding: 6px 8px 6px 150px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #1E324A;
+    display: block;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .arrow{
+    width: 30px;
+    vertical-align: middle;
+    height: 15px;
+  }
+
+  .links1{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+  }
+
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  
