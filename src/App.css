@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-image: url('./Components/Images/Admin.png');
+  background-attachment:fixed ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .App-logo {

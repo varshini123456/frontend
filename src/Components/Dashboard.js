@@ -4,20 +4,16 @@ import filter from './Icons/filter.svg'
 import eye from './Icons/eye.svg'
 import bike from './Icons/bike.svg'
 import car from './Icons/car.svg'
-import Paper from '@material-ui/core/Paper';
-import {ArgumentAxis,ValueAxis,Chart,BarSeries} from '@devexpress/dx-react-chart-material-ui';
+
+import Bargraph from './Bargraph';
+import BikePieChart from './BikePieChart';
+import CarPieChart from './CarPieChart'
+
 
 
 function Dashboard(){
 
-    const data = [
-        { argument: 'Monday', value: 30 },
-        { argument: 'Tuesday', value: 20 },
-        { argument: 'Wednesday', value: 10 },
-        { argument: 'Thursday', value: 50 },
-      ];
-    
-
+   
     return (
         <div class="box">
             <div class="filters">
@@ -30,7 +26,7 @@ function Dashboard(){
                             </div>
                             <div class="dropdown-arrow"></div>
                             <div class="dropdown-menu">
-                                <ul>
+                                <ul> 
                                     <li>Daily</li>
                                     <li>Monthly</li>
                                 </ul>
@@ -62,27 +58,22 @@ function Dashboard(){
                             <p class="da-text">Total parking book</p>
                             <div class="row">
                                 <div class="col">
-                                    <img src={bike} alt="bike" />
+                                    <img src={bike} alt="bike" className='car'/>
                                 </div>
                                 <div class="col">
-                                    <img src={car} alt="car" />
+                                    <img src={car} alt="car" className='car'/>
                                 </div>
-                                <div class="col">col</div>
-                                <div class="col">col</div>
+                                <div class="col">
+                                    <BikePieChart />
+                                </div>
+                                <div class="col">
+                                    <CarPieChart />
+                                </div>
                             </div>
                         </div>
                         <div class="col da-col 1">
                             <p class="da-text1">Total Revenue</p>
-                            <Paper>
-                                <Chart
-                                data={data}
-                                >
-                                <ArgumentAxis />
-                                <ValueAxis />
-                            
-                                <BarSeries valueField="value" argumentField="argument" />
-                                </Chart>
-                            </Paper>
+                            <Bargraph />
                         </div>
                         <div class="w-100"></div>
                         <div class="col da-col ">

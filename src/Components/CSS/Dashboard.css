@@ -4,7 +4,7 @@
     margin-left: 386px;
     margin-top: 0;
     width: 1150px;
-    height: 615px;
+    height: 588px;
 }
 
 .filters{
@@ -189,8 +189,8 @@
   .da-col{
     margin-left: 79px;
     margin-right: 118px;
-    margin-bottom: 61px; 
-    width: 50px;
+    margin-bottom: 50px; 
+    width: 60px;
     height: 196px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -260,4 +260,127 @@
     height: 44px;
     border: none;
     cursor: pointer;
+  }
+
+  .bike{
+    width: 100px;
+    height: 50px;
+  }
+
+  .car{
+    width: 100px;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .box, .boxfilter, .dashboardDetails, .filters, .dailyfilter, .custom, .to, .custom1{
+      flex-direction: column;
+      max-width: 100%;
+      float: none;
+    }
+    
+     .daily, .dropdown-menu{
+      position: unset;
+    }
+
+    .box{
+      margin-left: 0;
+    }
+
+    .filtericon, .dailyfilter{
+      margin-bottom: 10px;
+    }
+
+    .custom, .to, .custom1{
+      margin-left: 0;
+      float: left;
+      text-align: left;
+    }
+    .custom{
+      margin-bottom: 10px;
+    }
+
+    .dashboardDetails{
+      margin-top: 120px;
+    }
+
+    .da-col{
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .box, .boxfilter, .dashboardDetails, .filters, .dailyfilter, .custom, .to, .custom1{
+      flex-direction: column;
+      max-width: 100%;
+      float: none;
+    }
+    
+     .daily, .dropdown-menu{
+      position: unset;
+    }
+
+    .box{
+      margin-left: 0;
+    }
+
+    .filtericon, .dailyfilter{
+      margin-bottom: 10px;
+    }
+
+    .custom, .to, .custom1{
+      margin-left: 0;
+      float: left;
+      text-align: left;
+    }
+    .custom{
+      margin-bottom: 10px;
+    }
+
+    .dashboardDetails{
+      margin-top: 120px;
+    }
+
+    .da-col{
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  }
+
+  @media screen and (min-width: 802px) and (max-width: 1150px) {
+    
+    .da-col{
+      height: auto;
+      margin-left: 5%;
+      margin-right: 0;
+      padding-right: 2.82%;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .da-col{
+      width: 100%;
+      height: auto;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+    }
+    
+    .custom{
+      margin-left: 0;
+      float: left;
+      text-align: left;
+    }
+
+    .filters{
+      margin-left: 0;
+    }
   }
