@@ -314,7 +314,7 @@
 
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 992px) {
 
     .box, .boxfilter, .dashboardDetails, .filters, .dailyfilter, .custom, .to, .custom1{
       flex-direction: column;
@@ -354,6 +354,23 @@
       margin-right: 0;
     }
 
+    .custom{
+      margin-left: 0;
+      float: left;
+      text-align: left;
+    }
+
+    .filters{
+      margin-left: 15%;
+    }
+
+    .da-col{
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
   }
 
   @media screen and (min-width: 802px) and (max-width: 1150px) {
@@ -365,6 +382,27 @@
       padding-right: 2.82%;
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .custom, .to, .custom1{
+      margin-left: 0;
+      float: left;
+      text-align: right;
+    }
+
+    .dailyfilter{
+      position: relative;
+      transform: translateY(240%);
+    }
+
+    .filtericon{
+      position: relative;
+      transform: translateY(220%)
+    }
+
+  }
+
 
   @media screen and (max-width: 300px) {
     .da-col{

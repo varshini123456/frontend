@@ -11,13 +11,10 @@ function Navbar(){
             $("input[type='text']").focus();
           });
 
-          if( $(document).width() < 769){
+        if($(window).width() < 992){
             $('.search-container').hide();
-            $('#searchicon').show();
         }
-        else{
-            $('#searchicon').hide();
-        }
+
     });
 
     return (
@@ -26,15 +23,15 @@ function Navbar(){
                 <div className="time">
                     <p>11:30</p>
                 </div>
-                <i id="searchicon" class="fa fa-search" aria-hidden="true"></i>
-                <div className="search-container">
+                <div className="d-lg-none d-xl-none">
+                    <i  id="searchicon" class="fa fa-search"  ></i>
+                </div>
+                <div className="search-container d-lg-block d-xl-block" id="searchform">
                     <form action="#func">
                     <input type="text" placeholder="Search.." name="search" />
                     </form>
                 </div>
-                <div>
                     <img src={avatar} className="avatar" alt="avatar" />
-                </div>
             </div>
         </div>
     );

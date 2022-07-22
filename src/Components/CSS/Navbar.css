@@ -1,26 +1,27 @@
   .topnav {
     overflow: hidden;
     background: linear-gradient(180deg, #50D1E2 0.31%, rgba(80, 209, 226, 0.17) 44.06%, rgba(80, 209, 226, 0.98) 91.98%);
-    width: 1150px;
+    width: 100%;
     height: 60px;
+    display: flex;
   }
 
   
   .search-container{
-    position: absolute;
-    width: 506px;
+    /* text-align: center; */
+    /* position: absolute; */
+    margin: 0 auto;
+    width: 70%;
     height: 42px;
-    left: 783px;
-    top: 5px;
+    /* transform: translate(60%,5%); */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   
   
   
   .topnav input[type=text] {
-    width: 417px;
-    padding: 6px;
-    margin-top: 8px;
+    width: 50%;
+    padding: 7px;
     border: none;
     border-radius: 10px;
     color: #979797;
@@ -44,16 +45,18 @@
 
 
   .nav{
-    margin-left: 386px; 
+    margin-left: 384px; 
     box-sizing: border-box;
   }
 
   .time{
-    position: absolute;
+    float: left;
+    /* position: absolute; */
     width: 64px;
     height: 34px;
-    left: 402px;
-    top: 11px;
+    /* left: 402px;
+    top: 11px; */
+    padding: 8px 0 8px 2px;
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -65,17 +68,21 @@
   }
 
   .avatar{
-    position: absolute;
+    /* position: absolute; */
+    margin-left:auto;
+    float: right;
     width: 77px;
     height: 57px;
-    left: 1459px;
-    top: 2px;
+    /* transform: translateX(630%) */
 
   }
 
   #searchicon{
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 6px;
     cursor: pointer;
-    display:none;
+    margin-left: 15%;
   }
 
   
@@ -87,15 +94,7 @@
     .topnav .search-container {
       float: none;
     }
-     .topnav input[type=text], .topnav .search-container {
-      float: none;
-      display: flex;
-      text-align: left;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 14px;
-    }
+     
     .topnav input[type=text] {
       border: 1px solid #ccc; 
       width: 100%; 
@@ -119,13 +118,13 @@
     }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 992px) {
     .topnav *{
       vertical-align: middle;
     }
 
-    .topnav .search-container {
-      float: none;
+    .topnav  {
+      float: right;
     }
      .topnav input[type=text], .topnav .search-container {
       float: none;
@@ -150,13 +149,46 @@
       position: unset!important;
       
     }
+
+    .search-container form{
+      align-self: center;
+    }
+
+
     .nav{
       margin-left:0!important;
     }
     .time , .avatar{
       position: unset!important;
+      /* float: right; */
       
     }
+    .time{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      /* float: right; */
+      padding-right: 5px;
+      margin-left: auto;
+    }
+    .avatar{
+      margin-left: 15%;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      transform: translate(-50%,0%);
+      
+    }
+
+    .search-container{
+      transform: translate(0%,0%);
+      margin: 0 auto
+    }
+
+    #searchicon{
+      position: absolute;
+      margin: 0 auto;
+      /* transform: translate(-2500%,2%) */
+    }
+
   }
 
   

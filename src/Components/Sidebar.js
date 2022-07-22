@@ -1,5 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./CSS/Sidebar.css"
+
 import pms from './Icons/pms.svg'
 import dbimg from './Icons/dashboard.svg'
 import tp from './Icons/totalParking.svg'
@@ -15,18 +17,17 @@ import user from './Icons/user.svg'
 import logout from './Icons/logout.svg'
 import vector from './Icons/vector.svg'
 import logout1 from './Images/logout1.png'
+
 import $ from 'jquery'
+
+import Dashboard from './Dashboard'
+import TotalParking from './TotalParking'
+
 
 $(function() {
     $('#sidebarCollapse').on('click', function(){
         $('#sidebar').toggleClass('active');
     });
-    if( $(document).width() < 769){
-        $('#but').show()
-    }
-    else{
-        $('#but').hide();
-    }
 
 });
 
@@ -38,8 +39,10 @@ function Sidebar(){
         <div>
             <div>
                 <div className="sidebar" id="sidebar" >
-                    <div className="title">
-                        <header><img className="pms" src={pms} alt="logo"/><span>Park Me </span><span style={{"color": "#01B050"}}>Safe</span></header>
+                    <div >
+                        <header>
+                            <img className="pms" src={pms} alt="logo"/><span className="decoration">Park Me </span><span style={{"color": "#01B050"}}> Safe</span>
+                        </header>
                     </div>
                     <div>
                         <a href="#dashboard"><img className="links" src={dbimg} alt="dashboard" /> Dashboard</a>
@@ -74,13 +77,13 @@ function Sidebar(){
                         <a href="#adv"><img className="links" src={adv} alt="Advertise" /> Advertise</a>
                     </div>
                     <div className="logout">
-                        <img src={logout1} alt="curve" style={{width: '100%', height:'50px'}} />
+                        <img src={logout1} alt="curve" style={{width: '100%', height:'75px'}} />
                         <a href="#logout" className="centered"><img className="links1" src={logout} alt="logout" /> Log out</a>
                     </div>
                 </div>
 
-                <div id="but">
-                    <button id="sidebarCollapse"><i class="fa-solid fa-bars"></i></button>
+                <div id="but" className="d-lg-none d-xl-none">
+                    <button id="sidebarCollapse" type="button" className="navbar-toggler" data-bs-toggle="sidebar" data-bs-target="#sidebar" aria-controls="sidebar"><i className="fa-solid fa-bars " data-bs-target="#sidebar"></i></button>
                 </div>
             </div>
         </div>

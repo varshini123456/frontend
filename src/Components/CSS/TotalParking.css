@@ -1,0 +1,180 @@
+    .box-park{
+        margin-left: 384px;
+    }
+
+    .h2-title{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 49px;
+        color: #0A579D;
+        margin: 10px 0 0 0;
+    }
+
+    .h2-title::before{
+        content: "";
+        position: absolute;
+        bottom: -10%;
+        left: 40%;
+        padding: 0 2px;
+        width: 20%;
+        height: 1px;
+        border-bottom: 2px outset #0984F6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+
+    .custom-park{
+        margin-left: 43px;
+    }
+
+  .custom-park input[type=date]{
+    width: 200px;
+    height: 43px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom-park input[type=date]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom-park input[type=date]::selection{
+    border: none;
+  }
+
+
+  .custom1-park input[type=date]{
+    width: 200px;
+    height: 43px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 4px 14px 32px 0px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom1-park input[type=date]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.39);
+  }
+
+  .custom1-park input[type=date]::selection{
+    border: none;
+  }
+
+  .table-park{
+    margin-top: 50px;
+  }
+
+  .table-css th{
+    background: #D6FCD0;
+  }
+
+  .table-css tr{
+    height: 57px;
+  }
+
+  .table-css tr:nth-child(even) {
+    background: rgba(226, 252, 222, 0.41);
+  }
+
+  .table-css tr:nth-child(odd) {
+    background: rgb(255, 255, 255);
+  }
+
+  .table-park{
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  #myTable th, td {
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 576px) {
+    .col-xs-left{
+        text-align: left;
+    }
+  }  
+  
+
+
+  @media screen and (max-width: 768px) {
+    .box, .boxfilter, .dashboardDetails, .filters, .dailyfilter, .custom-park, .to, .custom1-park {
+        flex-direction: column;
+        max-width: 100%;
+        float: none;
+    }
+
+    .box-park{
+        margin-left: 0;
+    }
+
+    .custom-park, .to, .custom1-park{
+        margin-left: 0;
+        float: left;
+        text-align: left;
+    }
+
+    .table-park{
+        margin-top: 190px;
+      }
+
+    .container{
+        max-width:100%;
+    }
+
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+        .box-park{
+            margin-left: 0;
+        }
+
+        .custom-park, .to, .custom1-park{
+            margin-left: 0;
+            float: left;
+            text-align: right;
+        }
+  
+        .dailyfilter{
+            position: relative;
+            transform: translateY(240%);
+        }
+    
+        .filtericon{
+            position: relative;
+            transform: translateY(220%)
+        }
+
+        .box, .boxfilter, .dashboardDetails, .filters, .dailyfilter, .custom-park, .to, .custom1-park {
+            flex-direction: column;
+            max-width: 100%;
+            float: none;
+        }
+
+        .table-park{
+            margin-top: 190px;
+          }
+  }
+
+  /* @media screen and (min-width: 992px){
+    .container{
+    }
+  } */
+
+
+
+  

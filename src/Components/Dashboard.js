@@ -15,17 +15,17 @@ function Dashboard(){
 
    
     return (
-        <div class="box">
-            <div class="filters">
-                <span class="filtericon" ><img class="filter" src={filter} alt="filter"/>Filter</span>
+        <div className="box">
+            <div className="filters">
+                <span className="filtericon" ><img className="filter" src={filter} alt="filter"/>Filter</span>
                 <div>
-                    <div class="boxfilter">
-                        <div class="dailyfilter">
-                            <div class="daily">
+                    <div className="boxfilter">
+                        <div className="dailyfilter">
+                            <div className="daily">
                             Select
                             </div>
-                            <div class="dropdown-arrow"></div>
-                            <div class="dropdown-menu">
+                            <div className="dropdown-arrow"></div>
+                            <div className="dropdown-menu">
                                 <ul> 
                                     <li>Daily</li>
                                     <li>Monthly</li>
@@ -33,15 +33,15 @@ function Dashboard(){
                             </div>
                         </div>
 
-                        <div class="custom">
+                        <div className="custom">
                             <input type="date" 
                             value="2018-07-22"
                             min="2018-01-01" />
                         </div>
-                        <div class="to">
+                        <div className="to">
                             <p>To</p>
                         </div>
-                        <div class="custom1">
+                        <div className="custom1">
                             <input type="date" 
                             value="2018-07-22"
                             min="2018-01-01" />
@@ -51,41 +51,41 @@ function Dashboard(){
                 
             </div>
             <br />
-            <div class="dashboardDetails">
-                <div class="container">
-                    <div class="row">
-                        <div class="col da-col ">
-                            <p class="da-text">Total parking book</p>
-                            <div class="row">
-                                <div class="col">
+            <div className="dashboardDetails">
+                <div className="container">
+                    <div className="row">
+                        <div className="col da-col ">
+                            <p className="da-text">Total parking book</p>
+                            <div className="row">
+                                <div className="col">
                                     <img src={bike} alt="bike" className='car'/>
                                 </div>
-                                <div class="col">
+                                <div className="col">
                                     <img src={car} alt="car" className='car'/>
                                 </div>
-                                <div class="col">
+                                <div className="col">
                                     <BikePieChart />
                                 </div>
-                                <div class="col">
+                                <div className="col">
                                     <CarPieChart />
                                 </div>
                             </div>
                         </div>
-                        <div class="col da-col 1">
-                            <p class="da-text1">Total Revenue</p>
+                        <div className="col da-col ">
+                            <p className="da-text1">Total Revenue</p>
                             <Bargraph />
                         </div>
-                        <div class="w-100"></div>
-                        <div class="col da-col ">
-                            <p class="da-text">Total Sites</p>
-                            <div class="row" >
-                                <div class="col eye" >
+                        <div className="w-100"></div>
+                        <div className="col da-col ">
+                            <p className="da-text">Total Sites</p>
+                            <div className="row" >
+                                <div className="col eye" >
                                     <button><img src={eye} alt="eye" />View</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col da-col ">
-                            <p class="da-text">Customer review</p>
+                        <div className="col da-col ">
+                            <p className="da-text">Customer review</p>
                             <div className='row'>
                                 <div className='col da-reviews'>
                                     <p className='da-review-name'>John :</p>
